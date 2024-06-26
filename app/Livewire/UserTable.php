@@ -22,7 +22,7 @@ final class UserTable extends PowerGridComponent
 
     public function setUp(): array
     {
-        $this->showCheckBox();
+        // $this->showCheckBox();
 
         return [
             Header::make()->showSearchInput(),
@@ -83,9 +83,9 @@ final class UserTable extends PowerGridComponent
     {
         return [
             Button::add('edit')
-                ->slot('Edit: '.$row->id)
+                ->slot('Edit')
                 ->id()
-                ->class('btn btn-primary btn-sm')
+                ->class('btn btn-primary btn-sm my-1')
                 ->dispatch('edit', ['rowId' => $row->id])
         ];
     }
