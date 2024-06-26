@@ -13,7 +13,7 @@ Route::middleware(['guest'])->group(function () {
 Route::middleware(['auth', 'web'])->group(function () {
     Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
 
-    Route::get('/', DashboardLivewire::class)->name('home');
+    Route::get('/home', DashboardLivewire::class)->name('home');
 
     Route::prefix('users')->group(function () {
         Route::get('/', UserLivewire::class)->name('user');

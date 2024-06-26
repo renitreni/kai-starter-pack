@@ -6,7 +6,7 @@
     <title>{{ $title ?? 'Page' }} | {{ config('app.name') }}</title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
         name="viewport" />
-    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('images/company-logo.svg') }}" type="image/x-icon" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <script src="{{ asset('vendor/assets/js/plugin/webfont/webfont.min.js') }}"></script>
@@ -28,48 +28,8 @@
     </script>
 
     <link rel="stylesheet" href="{{ asset('vendor/assets/css/bootstrap.min.css') }}" />
-    <style>
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            display: flex;
-            align-items: center;
-            padding-top: 40px;
-            padding-bottom: 40px;
-            background-color: #f5f5f5;
-        }
-
-        .form-signin {
-            width: 100%;
-            max-width: 330px;
-            padding: 15px;
-            margin: auto;
-        }
-
-        .form-signin .checkbox {
-            font-weight: 400;
-        }
-
-        .form-signin .form-floating:focus-within {
-            z-index: 2;
-        }
-
-        .form-signin input[type="email"] {
-            margin-bottom: -1px;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-        }
-
-        .form-signin input[type="password"] {
-            margin-bottom: 10px;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-        }
-    </style>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="{{ asset('vendor/assets/css/kaiadmin.css') }}" />
+    @vite('resources/js/app.js')
     @livewireStyles
 </head>
 
