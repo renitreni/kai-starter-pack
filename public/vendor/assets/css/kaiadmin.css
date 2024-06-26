@@ -778,17 +778,14 @@ body {
     left: 0;
     top: 0; }
   .sidebar .nav-collapse, .sidebar[data-background-color="white"] .nav-collapse {
-    margin-top: 0px;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    padding-top: 10px; }
+    margin-top: 0px;}
     .sidebar .nav-collapse li.active > a, .sidebar[data-background-color="white"] .nav-collapse li.active > a {
       font-weight: 600; }
     .sidebar .nav-collapse li a:before, .sidebar .nav-collapse li a:hover:before, .sidebar[data-background-color="white"] .nav-collapse li a:before, .sidebar[data-background-color="white"] .nav-collapse li a:hover:before {
       opacity: 0 !important; }
     .sidebar .nav-collapse li a, .sidebar[data-background-color="white"] .nav-collapse li a {
-      margin-bottom: 3px !important;
-      padding: 10px 25px !important; }
+      margin-bottom: 0px !important;
+      padding: 10px 17px 5px 17px !important }
       .sidebar .nav-collapse li a .sub-item, .sidebar[data-background-color="white"] .nav-collapse li a .sub-item {
         font-size: 1rem;
         position: relative;
