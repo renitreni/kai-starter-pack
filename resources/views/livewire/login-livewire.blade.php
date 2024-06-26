@@ -5,7 +5,7 @@
                 <div class="col-11 col-md-3">
                     <div class="form-signin">
                         <form wire:submit="login">
-                            <img class="mb-4" src="{{ asset('images/company-logo.png') }}" alt="" height="180">
+                            <img class="mb-4" src="{{ route('get-company-logo') }}" alt="" height="180">
 
                             <h1 class="h3 mb-3 fw-normal">Please Sign In</h1>
 

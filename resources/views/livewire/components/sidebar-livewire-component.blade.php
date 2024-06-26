@@ -3,9 +3,9 @@
     <div class="sidebar-logo">
         <!-- Logo Header -->
         <div class="logo-header" data-background-color="dark">
-            <a href="index.html" class="logo">
-                <img src="{{ asset('vendor/assets/img/kaiadmin/logo_light.svg') }}" alt="navbar brand" class="navbar-brand"
-                    height="20">
+            <a href="{{ route('home') }}" class="logo">
+                <img src="{{ route('get-image', ['path' => $photoPath]) }}" alt="navbar brand" class="navbar-brand" height="40">
+                <label class="text-white ms-3 fs-5 fw-bolder">{{ config('app.name') }}</label>
             </a>
             <div class="nav-toggle">
                 <button class="btn btn-toggle toggle-sidebar">
@@ -18,7 +18,6 @@
             <button class="topbar-toggler more">
                 <i class="gg-more-vertical-alt"></i>
             </button>
-
         </div>
         <!-- End Logo Header -->
     </div>
@@ -44,6 +43,13 @@
                     <p>Users</p>
                 </x-sidebar-link-collapsable-component>
 
+
+                <x-sidebar-link-collapsable-component prefix="/settings" :sub="[
+                    'Company Logo' => 'company-logo',
+                ]">
+                    <i class="fas fa-cog"></i>
+                    <p>Settings</p>
+                </x-sidebar-link-collapsable-component>
             </ul>
         </div>
     </div>
