@@ -19,9 +19,11 @@
                         ></path>
                     </svg>
                 </span>
+                {{-- Hidden for Chrome autofill --}}
+                <input type="text" id="username" name="username" style="position: fixed; font-size: 0px; width: 0px; height: 0px; top: -500px; left: -500px;" />
                 <input
                     wire:model.live.debounce.600ms="search"
-                    type="text"
+                    name="search"
                     class="{{ data_get($theme, 'searchBox.inputClass') }}"
                     style="{{ data_get($theme, 'searchBox.inputStyle') }}"
                     placeholder="{{ trans('livewire-powergrid::datatable.placeholders.search') }}"

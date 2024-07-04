@@ -13,7 +13,6 @@ Route::middleware(['guest'])->group(function () {
     Route::get('/login', LoginLivewire::class)->name('login');
 });
 
-
 Route::get('/get-company-logo', GetCompanyLogo::class)->name('get-company-logo');
 
 Route::middleware(['auth', 'web'])->group(function () {
